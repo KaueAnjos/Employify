@@ -2,12 +2,12 @@
 require_once 'config/config.php';
 ?>
 <!DOCTYPE html>
-<html lang="pt-bt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-d0s9L3Dk3rA9rH25Kg5kfLQCgkObV6aPdXHN5c2eg+fpQpg4brd7HzsPU8eUQvL2" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.5/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>assets/css/navbar-style.css" />
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>assets/css/home-style.css" />
@@ -19,14 +19,16 @@ require_once 'config/config.php';
 
     // Route 
     $route = (isset($_GET['url'])) ? $_GET['url'] : 'home';
+    $feedDir = 'feed/';
     $pagesDir = 'pages/';
 
-    if (file_exists($pagesDir . $route . '.php')) {
+    if (file_exists($feedDir . $route . '.php')) {
+        include $feedDir . $route . '.php';
+    } elseif (file_exists($pagesDir . $route . '.php')) {
         include $pagesDir . $route . '.php';
     } else {
         include $pagesDir . '404.php';
     }
-
 
     include 'include/footer.php';
     ?>
