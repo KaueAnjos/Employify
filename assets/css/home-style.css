@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* colors */
+:root {
+    --light: #fff;
+    --primary-color: #0f3750ff;
+    --secondary-color: #1cc3dcff;
+}
+
+/* Home left */
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main section{
+    display: flex;
+    width: 100%;
+    height: calc(100dvh - 100px);
+}
+
+aside.aside-container-left{
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+div.container-left{
+    margin-left: 30px;
+}
+
+div.container-left h1{
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+
+div.container-left p{
+    font-size: 25px;
+    margin-bottom: 6%;
+}
+.aside-container-left div.recomendation-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.aside-container-left div.recomendation-buttons button{
+    border: none;
+    outline: none;
+    width: 200px;
+    padding: 20px 0 20px 0;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--light);
+    background-color: var(--primary-color);
+}
+
+.aside-container-left div.recomendation-buttons button:hover{
+    transition: 0.5s;
+    background-color: var(--secondary-color);
+    /* background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color)); */
+}
+
+.aside-container-left div.recomendation-buttons button:active{
+    transform: scale(0.95);
+}
+/* Home right */
+
+aside.aside-container-right{
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.intro-photo-container{
+    width: 500px;
+    height: 500px;
+    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

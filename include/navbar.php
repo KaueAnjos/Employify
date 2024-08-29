@@ -13,6 +13,7 @@
             <button>
             <i class="fa-solid fa-magnifying-glass"></i>
             </button>
+            <i class="fa-solid fa-microphone"></i>
         </div>
     </div>
 
