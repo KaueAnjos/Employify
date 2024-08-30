@@ -22,7 +22,25 @@
             </div>
         </aside>
     </section>
-    <section class="videos">
+    <section class="feed-display">
+        <div class="feed-title">
+            <h1>Recomendações</h1>
+        </div>
+        <div class="videos-display">
 
+            <div class="video-container">
+                <div class="video-informations">
+                    <div class="author-account-container">
+                        <img src="" alt="">
+                    </div>
+                    <p class="video-title">Título do vídeo</p>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+                <div class="video-thumbnail">
+                    <img src="" alt="Thumbnail">
+                </div>
+            </div>
+
+        </div>
     </section>
 </main>
