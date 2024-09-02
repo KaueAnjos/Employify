@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -13,26 +13,27 @@
 
 
 /* Main config */
-main{
+main {
     display: flex;
     flex-direction: column;
 }
 
-main section{
+main section {
     display: flex;
     width: 100%;
     height: 100vh;
 }
 
-main .main-menu{
+main .main-menu {
     display: flex;
     width: 100%;
     height: calc(100dvh - 100px);
 }
 
+
 /* Home left */
 
-aside.aside-container-left{
+aside.aside-container-left {
     margin: 0;
     width: 50%;
     height: 100%;
@@ -43,25 +44,26 @@ aside.aside-container-left{
     padding: 20px;
 }
 
-div.container-left{
+div.container-left {
     margin-left: 30px;
 }
 
-div.container-left h1{
+div.container-left h1 {
     font-size: 70px;
     margin-bottom: 40px;
 }
 
-div.container-left p{
+div.container-left p {
     font-size: 25px;
     margin-bottom: 6%;
 }
-.aside-container-left div.recomendation-buttons{
+
+.aside-container-left div.recomendation-buttons {
     display: flex;
     gap: 20px;
 }
 
-.aside-container-left div.recomendation-buttons button{
+.aside-container-left div.recomendation-buttons button {
     border: none;
     outline: none;
     width: 200px;
@@ -73,19 +75,19 @@ div.container-left p{
     background-color: var(--primary-color);
 }
 
-.aside-container-left div.recomendation-buttons button:hover{
+.aside-container-left div.recomendation-buttons button:hover {
     transition: 0.5s;
     background-color: var(--secondary-color);
     /* background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color)); */
 }
 
-.aside-container-left div.recomendation-buttons button:active{
+.aside-container-left div.recomendation-buttons button:active {
     transform: scale(0.95);
 }
 
 /* Home right */
 
-aside.aside-container-right{
+aside.aside-container-right {
     margin: 0;
     width: 50%;
     height: 100%;
@@ -95,7 +97,7 @@ aside.aside-container-right{
     justify-content: center;
 }
 
-div.intro-photo-container{
+div.intro-photo-container {
     width: 500px;
     height: 500px;
     background-color: burlywood;
@@ -106,24 +108,24 @@ div.intro-photo-container{
 
 /* Recommendation videos display */
 
-section.feed-display{
+section.feed-display {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section.feed-display .videos-display{
+section.feed-display .videos-display {
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 150px;
 }
 
-section.feed-display .videos-display .video-container{
+section.feed-display .videos-display .video-container {
     display: flex;
     flex-direction: column;
 }
 
-section.feed-display .videos-display .video-container .video-informations{
+section.feed-display .videos-display .video-container .video-informations {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -132,24 +134,35 @@ section.feed-display .videos-display .video-container .video-informations{
     padding: 0 20px 0 20px;
 }
 
-.video-container .video-informations i{
+section.feed-display .videos-display .video-container .video-informations .author-and-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.video-container .video-informations i {
     font-size: 30px;
 }
 
-p.video-title{
+.video-container .video-informations i:hover {
+    cursor: pointer;
+}
+
+p.video-title {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 500;
 }
 
-.video-container .video-informations .author-account-container{
+.video-container .video-informations .author-account-container {
     background-color: aqua;
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-section.feed-display .videos-display .video-container .video-thumbnail{
+section.feed-display .videos-display .video-container .video-thumbnail {
     background-color: red;
     display: flex;
     justify-content: center;

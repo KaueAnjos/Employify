@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* colors */
+:root {
+    --light: #fff;
+    --primary-color: #0f3750ff;
+    --secondary-color: #1cc3dcff;
+}
+
+/* General Styles */
+
+a.btn{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%);
+    margin: 0;
+}

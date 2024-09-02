@@ -1,3 +1,6 @@
+<head>
+    <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>assets/css/home-style.css" />
+</head>
 <main>
     <section class="main-menu">
         <aside class="aside-container-left">
@@ -30,10 +33,87 @@
 
             <div class="video-container">
                 <div class="video-informations">
-                    <div class="author-account-container">
-                        <img src="" alt="">
+                    <div class="author-and-title">
+                        <div class="author-account-container">
+                            <img src="" alt="">
+                        </div>
+                        <p class="video-title">Título do vídeo</p>
                     </div>
-                    <p class="video-title">Título do vídeo</p>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+                <div class="video-thumbnail">
+                    <img src="" alt="Thumbnail">
+                </div>
+            </div>
+
+            <div class="video-container">
+                <div class="video-informations">
+                    <div class="author-and-title">
+                        <div class="author-account-container">
+                            <img src="" alt="">
+                        </div>
+                        <p class="video-title">Título do vídeo</p>
+                    </div>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+                <div class="video-thumbnail">
+                    <img src="" alt="Thumbnail">
+                </div>
+            </div>
+
+            <div class="video-container">
+                <div class="video-informations">
+                    <div class="author-and-title">
+                        <div class="author-account-container">
+                            <img src="" alt="">
+                        </div>
+                        <p class="video-title">Título do vídeo</p>
+                    </div>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+                <div class="video-thumbnail">
+                    <img src="" alt="Thumbnail">
+                </div>
+            </div>
+
+            <div class="video-container">
+                <div class="video-informations">
+                    <div class="author-and-title">
+                        <div class="author-account-container">
+                            <img src="" alt="">
+                        </div>
+                        <p class="video-title">Título do vídeo</p>
+                    </div>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+                <div class="video-thumbnail">
+                    <img src="" alt="Thumbnail">
+                </div>
+            </div>
+
+            <div class="video-container">
+                <div class="video-informations">
+                    <div class="author-and-title">
+                        <div class="author-account-container">
+                            <img src="" alt="">
+                        </div>
+                        <p class="video-title">Título do vídeo</p>
+                    </div>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+                <div class="video-thumbnail">
+                    <img src="" alt="Thumbnail">
+                </div>
+            </div>
+
+            <div class="video-container">
+                <div class="video-informations">
+                    <div class="author-and-title">
+                        <div class="author-account-container">
+                            <img src="" alt="">
+                        </div>
+                        <p class="video-title">Título do vídeo</p>
+                    </div>
                     <i class="fas fa-ellipsis-v"></i>
                 </div>
                 <div class="video-thumbnail">
