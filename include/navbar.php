@@ -22,8 +22,8 @@
 
         <li class="user-profile">
             <div class="register-user">
-                <a href="<?php echo INCLUDE_PATH_AUTH ?>/login"><button>Entrar</button></a>
-                <a href="<?php echo INCLUDE_PATH_AUTH ?>/signup"><button>Registrar-se</button></a>
+                <a href="<?php echo INCLUDE_PATH_AUTH ?>login"><button>Entrar</button></a>
+                <a href="<?php echo INCLUDE_PATH_AUTH ?>signup"><button>Registrar-se</button></a>
             </div>
             <!-- <i class="fa-solid fa-user"></i> -->
             <div class="dropdown">
@@ -50,7 +50,7 @@
                             </label>
                         </a>
                     </li>
-                    <li><a class="dropdown-item" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Entrar</a></li>
+                    <li><a class="dropdown-item" href="<?php echo INCLUDE_PATH_AUTH ?>login"><i class="fa fa-sign-in" aria-hidden="true"></i>Entrar</a></li>
                 </ul>
             </div>
         </li>

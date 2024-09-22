@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* colors */
+:root {
+    --light: #fff;
+    --primary-color: #091f2f;
+    --primary-color-light: #113a53;
+    --primary-color-light-hover: #174c6d;
+    --secondary-color: #1cc3dcff;
+    --secondary-color-hover: #168899;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100%;
+}
+
+/* Login container */
+div.login-container{
+    width: 500px;
+    height: 800px;
+    background-color: var(--primary-color);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.login-container h1{
+    color: var(--light);
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+div.login-container .login-form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div.login-container .login-form a{
+    color: var(--secondary-color);
+}
+
+div.login-container .login-form p{
+    color: var(--light);
+}
+
+div.login-container .login-form button{
+    background-color: var(--secondary-color);
+    color: var(--light);
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 15px;
+}
+
+div.login-container .input-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-field {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.input-field i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+div.login-container .input-group .input-field input {
+    width: 100%;
+    padding: 20px 20px 20px 50px;
+    border-radius: 20px;
+    border: none;
+}
+
+div.login-container .social-login{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+div.login-container .social-login i{
+    font-size: 40px;
+    color: var(--secondary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+div.login-container .social-login i:hover{
+    transition: 0.5s;
+    background-color: var(--primary-color-light);   
+}
+
+/* Divider hr */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.divider hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid var(--light); 
+    margin: 0 10px; 
+}
+
+.divider span {
+    padding: 0 10px;
+    font-size: 14px; 
+    color: var(--light);
+}
