@@ -7,8 +7,11 @@
 /* colors */
 :root {
     --light: #fff;
-    --primary-color: #0f3750ff;
+    --primary-color: #091f2f;
+    --primary-color-light: #113a53;
+    --primary-color-light-hover: #174c6d;
     --secondary-color: #1cc3dcff;
+    --secondary-color-hover: #168899;
 }
 
 /* NavBar config */
@@ -18,23 +21,40 @@ body .navbar {
     background-color: var(--primary-color);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 30px 0 30px;
+    padding: 0 30px;
+    color: var(--light);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
 }
 
-/* Search bar and employify logo */
-body .navbar .search-bar {
+body .navbar ul li {
+    list-style: none;
+}
+
+body .navbar ul.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    color: var(--light);
+}
+
+/* Employify logo */
+
+/* Search bar */
+body .navbar .nav-logo-search {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-body .navbar .search{
+body .navbar .search-box {
     display: flex;
-    align-items: center ;
+    align-items: center;
 }
 
-body .navbar .search-bar .search input {
+body .navbar .nav-logo-search .search-box input {
     border-radius: 25px;
     width: 250px;
     outline: none;
@@ -42,7 +62,7 @@ body .navbar .search-bar .search input {
     padding: 10px 10px 10px 20px;
 }
 
-body .navbar .search-bar .search button{
+body .navbar .nav-logo-search .search-box button {
     position: relative;
     right: 40px;
     background-color: var(--primary-color);
@@ -52,30 +72,34 @@ body .navbar .search-bar .search button{
     height: 35px;
 }
 
-body .navbar .search-bar .search button:hover{
+body .navbar .nav-logo-search .search-box button:hover {
     transition: 0.5s;
     background-color: var(--secondary-color);
 }
 
-body .navbar .search-bar .search button i{
+body .navbar .nav-logo-search .search-box button i {
     color: var(--light);
 }
 
-body .navbar .search-bar .search i.fa-microphone{
+body .navbar .nav-logo-search .search-box i.fa-microphone {
     color: var(--secondary-color);
     font-size: 24px;
-    margin: 0;
-    padding: 0;
+    padding: 12px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
 }
 
-body .navbar .search-bar .search i.fa-microphone:hover{
+body .navbar .nav-logo-search .search-box i.fa-microphone:hover {
     transition: 0.5s;
-    transform: scale(0.90);
+    background-color: var(--primary-color-light);
 }
-
 
 /* Profile account photo */
-body .navbar .account-photo-container {
+body .navbar .profile-photo {
     background-color: red;
     border-radius: 50%;
     width: 50px;
@@ -86,4 +110,146 @@ body .navbar .account-photo-container {
     justify-content: center;
 }
 
-/*  */
+/* User Profile dropdown*/
+li.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+li.user-profile i {
+    color: var(--secondary-color);
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+}
+
+li.user-profile button i:hover {
+    cursor: pointer;
+    background-color: var(--primary-color-light);
+    transition: 0.5s;
+}
+
+li.user-profile button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--primary-color-light);
+    transition: 0.5s;
+    color: var(--light);
+}
+
+li.user-profile button:hover {
+    background-color: var(--primary-color-light-hover);
+}
+
+li.user-profile .register-user a:last-child button {
+    background-color: var(--secondary-color);
+}
+
+li.user-profile .register-user a:last-child:hover button {
+    background-color: var(--secondary-color-hover);
+}
+
+li.user-profile .dropdown button {
+    background: none;
+}
+
+li.user-profile .dropdown .dropdown-menu {
+    background-color: var(--primary-color-light);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 5px;
+    border-radius: 10px;
+    min-width: 200px;
+}
+
+li.user-profile .dropdown .dropdown-menu li a.dropdown-item {
+    display: flex;
+    align-items: center;
+    color: var(--light);
+    border-radius: 8px;
+    justify-content: left;
+}
+
+li.user-profile .dropdown .dropdown-menu li:nth-child(2) a.dropdown-item {
+    justify-content: space-between;
+}
+
+li.user-profile .dropdown .dropdown-menu li:hover a,
+li.user-profile .dropdown .dropdown-menu li a:active,
+li.user-profile .dropdown .dropdown-menu li a:focus {
+    background-color: var(--primary-color-light-hover);
+}
+
+li.user-profile .dropdown .dropdown-menu li a.dropdown-item div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+li.user-profile .dropdown .dropdown-menu li a.dropdown-item p {
+    margin: 0;
+}
+
+/* UIVERSE theme switch */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 2.1em;
+    height: 1.2em;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 18px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 0.84em;
+    width: 0.84em;
+    border-radius: 20px;
+    left: 0.18em;
+    bottom: 0.18em;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--secondary-color);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--secondary-color);
+}
+
+input:checked+.slider:before {
+    transform: translateX(1em);
+}

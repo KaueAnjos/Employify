@@ -18,16 +18,13 @@ require_once 'config/config.php';
     include 'include/navbar.php';
 
     // Route 
-    $route = (isset($_GET['url'])) ? $_GET['url'] : 'home';
+    $route = (isset($_GET['url'])) ? $_GET['url'] : 'feed';
     $feedDir = 'feed/';
-    $pagesDir = 'pages/';
 
     if (file_exists($feedDir . $route . '.php')) {
         include $feedDir . $route . '.php';
-    } elseif (file_exists($pagesDir . $route . '.php')) {
-        include $pagesDir . $route . '.php';
     } else {
-        include $pagesDir . '404.php';
+        include '404.php';
     }
 
     include 'include/footer.php';

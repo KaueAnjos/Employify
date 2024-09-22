@@ -7,10 +7,12 @@
 /* colors */
 :root {
     --light: #fff;
-    --primary-color: #0f3750ff;
+    --primary-color: #091f2f;
+    --primary-color-light: #113a53;
+    --primary-color-light-hover: #174c6d;
     --secondary-color: #1cc3dcff;
+    --secondary-color-hover: #168899;
 }
-
 
 /* Main config */
 main {
@@ -27,9 +29,10 @@ main section {
 main .main-menu {
     display: flex;
     width: 100%;
-    height: calc(100dvh - 100px);
+    height: calc(100dvh);
+    background-color: var(--primary-color);
+    color: var(--light);
 }
-
 
 /* Home left */
 
@@ -37,7 +40,6 @@ aside.aside-container-left {
     margin: 0;
     width: 50%;
     height: 100%;
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,12 +88,10 @@ div.container-left p {
 }
 
 /* Home right */
-
 aside.aside-container-right {
     margin: 0;
     width: 50%;
     height: 100%;
-    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,6 +112,7 @@ section.feed-display {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--primary-color-light);
 }
 
 section.feed-display .videos-display {
