@@ -28,12 +28,12 @@ require_once __DIR__ . '../../config/connection.php';
     </section>
     <div class="login-container container-fluid">
         <h1>Entrar</h1>
-        <div class="login-form">
+        <form  method="POST" action="?" class="login-form">
             <div class="input-group">
                 <div class="input-field">
                     <i class="fa-solid fa-user"></i>
                     <input type="text" placeholder="Nome de usuário ou email">
-                </div>
+                </div>  
 
                 <div class="input-field">
                     <i class="fa-solid fa-lock"></i>
@@ -42,7 +42,7 @@ require_once __DIR__ . '../../config/connection.php';
             </div>
 
             <a href="#">Esqueceu a senha?</a>
-            <button>Entrar</button>
+            <button type="submit">Entrar</button>
             <p>Ainda não possui uma conta? <a href="<?php echo INCLUDE_PATH_AUTH; ?>signup">Registre-se</a></p>
 
             <div class="divider">
@@ -56,7 +56,7 @@ require_once __DIR__ . '../../config/connection.php';
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-github"></i>
             </div>
-        </div>
+        </form>
     </div>
     <script src="<?php echo INCLUDE_PATH_AUTH; ?>assets/js/script.js"></script>
 </body>

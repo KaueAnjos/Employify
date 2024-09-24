@@ -12,6 +12,7 @@
     --primary-color-light-hover: #174c6d;
     --secondary-color: #1cc3dcff;
     --secondary-color-hover: #168899;
+    --background:  radial-gradient(circle, rgba(9,31,47,1) 0%, rgba(9,31,47,1) 66%, rgba(17,58,83,1) 100%);
 }
 
 /* Main config */
@@ -30,8 +31,12 @@ main .main-menu {
     display: flex;
     width: 100%;
     height: calc(100dvh);
-    background-color: var(--secondary-color-hover);
+    background: var(--background);
     color: var(--light);
+}
+
+main .main-menu .main-container{
+    margin-top: 100px;
 }
 
 /* Home left */
@@ -74,12 +79,12 @@ div.container-left p {
     text-transform: uppercase;
     font-weight: 500;
     color: var(--light);
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .aside-container-left div.recomendation-buttons button:hover {
     transition: 0.5s;
-    background-color: var(--primary-color-light);
+    background-color: var(--secondary-color-hover);
     /* background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color)); */
 }
 
