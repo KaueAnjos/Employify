@@ -42,6 +42,14 @@ body .navbar ul.nav-list {
 
 /* Employify logo */
 
+body .navbar img.logo{
+    width: 70px;
+}
+
+body .navbar img.logo:hover{
+    cursor: pointer;
+}
+
 /* Search bar */
 body .navbar .nav-logo-search {
     display: flex;

@@ -9,7 +9,7 @@
     <ul class="nav-list">
         <li>
             <div class="nav-logo-search">
-                <img src="<?php echo INCLUDE_PATH ?>/assets/img/logo/logo.png" alt="Logo">
+                <img src="<?php echo INCLUDE_PATH ?>/assets/img/logoEmployifyLight.png" alt="Logo" class="logo" onclick="resetPage();">
                 <div class="search-box">
                     <input type="search" placeholder="Pesquisar...">
                     <button>

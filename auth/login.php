@@ -13,9 +13,19 @@ require_once __DIR__ . '../../config/connection.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-d0s9L3Dk3rA9rH25Kg5kfLQCgkObV6aPdXHN5c2eg+fpQpg4brd7HzsPU8eUQvL2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH_AUTH; ?>assets/css/login-style.css" />
+    <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>assets/css/general-style.css" />
+    <link rel="shortcut icon" type="imagex/png" href="<?php echo INCLUDE_PATH; ?>assets/img/LogoEmployifyLight.png">
 </head>
 
 <body>
+
+    <section class="dots-container" id="loadingDots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </section>
     <div class="login-container container-fluid">
         <h1>Entrar</h1>
         <div class="login-form">
@@ -48,6 +58,7 @@ require_once __DIR__ . '../../config/connection.php';
             </div>
         </div>
     </div>
+    <script src="<?php echo INCLUDE_PATH_AUTH; ?>assets/js/script.js"></script>
 </body>
 
 </html>

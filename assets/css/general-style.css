@@ -1,0 +1,70 @@
+:root {
+    --light: #fff;
+    --primary-color: #091f2f;
+    --primary-color-light: #113a53;
+    --primary-color-light-hover: #174c6d;
+    --secondary-color: #1cc3dcff;
+    --secondary-color-hover: #168899;
+}
+
+.dots-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.dot:last-child {
+    margin-right: 0;
+}
+
+.dot:nth-child(1) {
+    animation-delay: -0.3s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: -0.1s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.1s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        background-color: var(--primary-color);
+        box-shadow: 0 0 0 0 rgba(28, 195, 220, 0.7); 
+    }
+
+    50% {
+        transform: scale(1.2);
+        background-color: var(--secondary-color);
+        box-shadow: 0 0 0 10px rgba(28, 195, 220, 0);
+    }
+
+    100% {
+        transform: scale(0.8);
+        background-color: var(--primary-color);
+        box-shadow: 0 0 0 0 rgba(28, 195, 220, 0.7);
+    }
+}
+
+#loadingDots.hidden {
+    display: none;
+}
