@@ -24,8 +24,7 @@ body .navbar {
     align-items: center;
     padding: 0 30px;
     color: var(--light);
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-    /* background: var(--background); */
+    transition: 1.5s;
     position: fixed;
 }
 
