@@ -42,11 +42,11 @@
                         <a class="dropdown-item" href="#">
                             <div> 
                                 <i class="fa-solid fa-moon"></i>
-                                <p>Tema</p>
+                                <p>Tema Escuro</p>
                             </div>
     
                             <label class="switch">
-                                <input type="checkbox">
+                                <input type="checkbox" checked>
                                 <span class="slider"></span>
                             </label>
                         </a>

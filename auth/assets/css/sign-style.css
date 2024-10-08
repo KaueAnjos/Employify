@@ -13,6 +13,7 @@
     --primary-color-light-hover: #174c6d;
     --secondary-color: #1cc3dcff;
     --secondary-color-hover: #168899;
+    --background:  radial-gradient(circle, rgba(9,31,47,1) 0%, rgba(9,31,47,1) 66%, rgba(17,58,83,1) 100%);
 }
 
 body{
@@ -27,7 +28,7 @@ body{
 div.login-container{
     width: 500px;
     height: 800px;
-    background-color: var(--primary-color);
+    background: var(--background);
     border-radius: 40px;
     display: flex;
     flex-direction: column;
