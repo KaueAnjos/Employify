@@ -42,7 +42,37 @@
                         </div>
                         <p class="video-title">Título do vídeo</p>
                     </div>
-                    <i class="fas fa-ellipsis-v"></i>
+                    <div class="dropdown">
+                        <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <p>Inscreva-se</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-share"></i>
+                                    <p>Compartilhar</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-ban"></i>
+                                    <p>Não tenho interesse</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <p>Denunciar</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="video-thumbnail">
                     <img src="" alt="Thumbnail">
@@ -57,7 +87,37 @@
                         </div>
                         <p class="video-title">Título do vídeo</p>
                     </div>
-                    <i class="fas fa-ellipsis-v"></i>
+                    <div class="dropdown">
+                        <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <p>Inscreva-se</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-share"></i>
+                                    <p>Compartilhar</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-ban"></i>
+                                    <p>Não tenho interesse</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <p>Denunciar</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="video-thumbnail">
                     <img src="" alt="Thumbnail">
@@ -72,7 +132,37 @@
                         </div>
                         <p class="video-title">Título do vídeo</p>
                     </div>
-                    <i class="fas fa-ellipsis-v"></i>
+                    <div class="dropdown">
+                        <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <p>Inscreva-se</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-share"></i>
+                                    <p>Compartilhar</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-ban"></i>
+                                    <p>Não tenho interesse</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <p>Denunciar</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="video-thumbnail">
                     <img src="" alt="Thumbnail">
@@ -87,7 +177,37 @@
                         </div>
                         <p class="video-title">Título do vídeo</p>
                     </div>
-                    <i class="fas fa-ellipsis-v"></i>
+                    <div class="dropdown">
+                        <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <p>Inscreva-se</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-share"></i>
+                                    <p>Compartilhar</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-ban"></i>
+                                    <p>Não tenho interesse</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <p>Denunciar</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="video-thumbnail">
                     <img src="" alt="Thumbnail">
@@ -102,7 +222,37 @@
                         </div>
                         <p class="video-title">Título do vídeo</p>
                     </div>
-                    <i class="fas fa-ellipsis-v"></i>
+                    <div class="dropdown">
+                        <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <p>Inscreva-se</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-share"></i>
+                                    <p>Compartilhar</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-ban"></i>
+                                    <p>Não tenho interesse</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <p>Denunciar</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="video-thumbnail">
                     <img src="" alt="Thumbnail">
@@ -117,13 +267,42 @@
                         </div>
                         <p class="video-title">Título do vídeo</p>
                     </div>
-                    <i class="fas fa-ellipsis-v"></i>
+                    <div class="dropdown">
+                        <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <p>Inscreva-se</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-share"></i>
+                                    <p>Compartilhar</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-ban"></i>
+                                    <p>Não tenho interesse</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <p>Denunciar</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="video-thumbnail">
                     <img src="" alt="Thumbnail">
                 </div>
             </div>
-
         </div>
     </section>
 </main>

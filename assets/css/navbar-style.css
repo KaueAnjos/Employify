@@ -26,6 +26,7 @@ body .navbar {
     color: var(--light);
     transition: 1.5s;
     position: fixed;
+    z-index: 999;
 }
 
 body .navbar ul li {
