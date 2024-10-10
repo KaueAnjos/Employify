@@ -36,6 +36,7 @@ main .main-menu {
 }
 
 main .main-menu .main-container {
+    display: flex;
     margin-top: 100px;
 }
 
@@ -104,6 +105,7 @@ aside.aside-container-right {
 div.intro-photo-container {
     width: 500px;
     height: 500px;
+    border-radius: 30px;
     background-color: burlywood;
     display: flex;
     align-items: center;
@@ -117,13 +119,20 @@ section.feed-display {
     flex-direction: column;
     align-items: center;
     background: var(--background);
+    width: 100%;
+    height: auto;
     color: var(--light);
+}
+
+section.feed-display .feed-title{
+    margin-top: 150px;
 }
 
 section.feed-display .videos-display {
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 150px;
+    margin-top: 100px;
 }
 
 section.feed-display .videos-display .video-container {

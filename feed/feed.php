@@ -15,7 +15,7 @@
                         justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                     </p>
                     <div class="recomendation-buttons">
-                        <button>Recomendações</button>
+                        <a href="#feed"><button>Recomendações</button></a>
                         <button>Cursos</button>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
             </aside>
         </div>
     </section>
-    <section class="feed-display">
+    <section class="feed-display" id="feed">
         <div class="feed-title">
             <h1>Recomendações</h1>
         </div>
