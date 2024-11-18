@@ -97,6 +97,10 @@ div.login-container .input-group .input-field input {
     border: none;
 }
 
+div.login-container .input-group .input-field input:focus{
+    outline-color: var(--secondary-color);
+}
+
 div.login-container .social-login {
     display: flex;
     gap: 30px;

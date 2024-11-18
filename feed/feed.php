@@ -2,7 +2,25 @@
     <title>Employify | Menu Principal</title>
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>assets/css/home-style.css" />
 </head>
+
 <main>
+
+    <div class="side-menu" id="side-menu">
+        <button class="side-menu-btn" id="side-menu-btn" type="button">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="menu-content">
+            <p>Início</p>
+            <p>Em Alta</p>
+            <p>Notícias</p>
+            <hr />
+            <p>Inscrições</p>
+            <p>Curtidas</p>
+            <p>Cursos</p>
+            <p>Histórico</p>
+        </div>
+    </div>
+
     <section class="main-menu">
         <div class="main-container">
             <aside class="aside-container-left">

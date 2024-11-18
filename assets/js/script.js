@@ -31,3 +31,27 @@ window.addEventListener("scroll", function () {
         header.style.boxShadow = "none";
     }
 });
+
+// Side Menu
+const sideMenuBtn = document.querySelector('.side-menu-btn');
+const sideMenu = document.querySelector('.side-menu');
+
+let isMenuOpen = false;
+
+sideMenuBtn.addEventListener('click', () => {
+  if (isMenuOpen) {
+    sideMenu.style.transform = 'translateX(250px)';
+    sideMenuBtn.style.transform = 'translateY(-50%)';
+    sideMenuBtn.querySelector('i').classList.replace('fa-chevron-right', 'fa-chevron-left');
+  } else {
+    sideMenu.style.transform = 'translateX(-250px)';
+    sideMenuBtn.style.transform = 'translate(250px, -50%)';
+    sideMenuBtn.querySelector('i').classList.replace('fa-chevron-left', 'fa-chevron-right');
+  }
+  isMenuOpen = !isMenuOpen;
+});
+
+
+
+
+

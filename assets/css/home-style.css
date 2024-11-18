@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    /* overflow-x: hidden; */
+}
+
 /* colors */
 :root {
     --light: #fff;
@@ -59,6 +63,7 @@ div.container-left {
 div.container-left h1 {
     font-size: 70px;
     margin-bottom: 40px;
+    overflow-y: hidden;
 }
 
 div.container-left p {
@@ -124,7 +129,7 @@ section.feed-display {
     color: var(--light);
 }
 
-section.feed-display .feed-title{
+section.feed-display .feed-title {
     margin-top: 150px;
 }
 
@@ -251,4 +256,55 @@ section.feed-display .videos-display .video-container .video-thumbnail {
     margin: 0;
 }
 
-/*  */
+
+/* Offcanvas */
+
+/* Estilo do menu lateral */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: var(--light);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.menu-content p {
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px 0;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    color: var(--light);
+}
+
+.side-menu-btn {
+    position: fixed;
+    top: 50%;
+    border-radius: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    padding: 15px 20px 15px 10px;
+    background-color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+    transition: right 0.3s ease-in-out;
+}
+
+.side-menu-btn i {
+    font-size: 25px;
+    color: var(--light);
+}
+
+.side-menu.active {
+    left: 0;
+}
+
+.side-menu.active .side-menu-btn {
+    right: 200px;
+}
