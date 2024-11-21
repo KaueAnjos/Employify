@@ -33,23 +33,32 @@ window.addEventListener("scroll", function () {
 });
 
 // Side Menu
-const sideMenuBtn = document.querySelector('.side-menu-btn');
-const sideMenu = document.querySelector('.side-menu');
+function sideMenu() {
+    const sideMenu = document.getElementById('side-menu');
+    const sideMenuBtn = document.getElementById('side-menu-btn');
+    const mainContent = document.querySelector('main');
+    const navbar = document.getElementById('user-profile');
 
-let isMenuOpen = false;
+    if (sideMenu.classList.contains('open')) {
+        sideMenu.classList.remove('open');
+        sideMenuBtn.style.right = '-15px';
+        mainContent.classList.remove('shifted');
+        navbar.classList.remove('shifted');
+        sideMenuBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+    } else {
+        sideMenu.classList.add('open');
+        sideMenuBtn.style.right = '230px';
+        mainContent.classList.add('shifted');
+        navbar.classList.add('shifted');
+        sideMenuBtn.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+    }
+}
 
-sideMenuBtn.addEventListener('click', () => {
-  if (isMenuOpen) {
-    sideMenu.style.transform = 'translateX(250px)';
-    sideMenuBtn.style.transform = 'translateY(-50%)';
-    sideMenuBtn.querySelector('i').classList.replace('fa-chevron-right', 'fa-chevron-left');
-  } else {
-    sideMenu.style.transform = 'translateX(-250px)';
-    sideMenuBtn.style.transform = 'translate(250px, -50%)';
-    sideMenuBtn.querySelector('i').classList.replace('fa-chevron-left', 'fa-chevron-right');
-  }
-  isMenuOpen = !isMenuOpen;
-});
+
+
+
+
+
 
 
 

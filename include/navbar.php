@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="<?php echo INCLUDE_PATH; ?>assets/js/script.js"></script>
 </head>
-<nav class="navbar navbar-expand-lg" id="navbar">
+<nav class="navbar" id="navbar">
     <ul class="nav-list">
         <li>
             <div class="nav-logo-search">
@@ -21,7 +21,7 @@
             </div>
         </li>
 
-        <li class="user-profile">
+        <li class="user-profile" id="user-profile">
             <div class="register-user">
                 <a href="<?php echo INCLUDE_PATH_AUTH ?>login"><button>Entrar</button></a>
                 <a href="<?php echo INCLUDE_PATH_AUTH ?>signup"><button>Registrar-se</button></a>

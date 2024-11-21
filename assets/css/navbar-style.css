@@ -263,3 +263,13 @@ input:focus+.slider {
 input:checked+.slider:before {
     transform: translateX(1em);
 }
+
+/* NavBar Shifted transition */
+
+nav .user-profile {
+    transition: margin-right 0.3s ease-in-out;
+}
+
+nav .user-profile.shifted {
+    margin-right: 250px;
+}
