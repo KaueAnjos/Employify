@@ -117,7 +117,7 @@ div.intro-photo-container {
     justify-content: center;
 }
 
-/* Recommendation videos display */
+/* Recommendation courses display */
 
 section.feed-display {
     display: flex;
@@ -133,19 +133,19 @@ section.feed-display .feed-title {
     margin-top: 150px;
 }
 
-section.feed-display .videos-display {
+section.feed-display .courses-display {
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 150px;
     margin-top: 100px;
 }
 
-section.feed-display .videos-display .video-container {
+section.feed-display .courses-display .course-container {
     display: flex;
     flex-direction: column;
 }
 
-section.feed-display .videos-display .video-container .video-informations {
+section.feed-display .courses-display .course-container .course-informations {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -154,14 +154,14 @@ section.feed-display .videos-display .video-container .video-informations {
     padding: 0 0 0 20px;
 }
 
-section.feed-display .videos-display .video-container .video-informations .author-and-title {
+section.feed-display .courses-display .course-container .course-informations .author-and-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
 
-.video-container .video-informations i {
+.course-container .course-informations i {
     font-size: 30px;
     border-radius: 50%;
     display: inline-flex;
@@ -171,26 +171,37 @@ section.feed-display .videos-display .video-container .video-informations .autho
     height: 60px;
 }
 
-.video-container .video-informations i:hover {
+.course-container .course-informations i:hover {
     cursor: pointer;
     background-color: var(--primary-color-light-hover);
 }
 
-p.video-title {
+.course-title-container{
+    width: 350px;
+}
+
+/* .side-menu.open ~ .course-title-container{
+    width: 250px;
+} */
+
+p.course-title {
+    position: relative;
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-.video-container .video-informations .author-account-container {
+.course-container .course-informations .author-account-container {
     background-color: aqua;
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-section.feed-display .videos-display .video-container .video-thumbnail {
-    background-color: red;
+section.feed-display .courses-display .course-container .course-thumbnail {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,11 +209,17 @@ section.feed-display .videos-display .video-container .video-thumbnail {
     width: 500px;
     height: 300px;
     transition: width 0.3s ease, height 0.3s ease;
+    overflow: hidden;
 }
 
-.side-menu.open ~ section.feed-display .videos-display .video-container .video-thumbnail {
+section.feed-display .courses-display .course-container .course-thumbnail img {
+    width: 100%;
+    height: 100%;
+}
+
+.side-menu.open ~ section.feed-display .courses-display .course-container .course-thumbnail {
     width: 400px;
-    height: 250px;  
+    height: 250px;
 }
 
 /* Dropdown */
@@ -283,7 +300,7 @@ main.shifted {
     transition: right 0.3s ease-in-out;
     z-index: 9999;
     overflow-y: scroll;
-    scrollbar-width: none; 
+    scrollbar-width: none;
     -ms-overflow-style: none;
 }
 
@@ -313,7 +330,7 @@ main.shifted {
     text-transform: uppercase;
 }
 
-.menu-content p:hover{
+.menu-content p:hover {
     background-color: var(--secondary-color-hover);
     transition: 0.5s;
 }
@@ -342,9 +359,9 @@ main.shifted {
 }
 
 hr {
-    width: 95%; 
-    height: 2px; 
-    border: none; 
-    background-color: var(--light); 
-    margin: 20px 0; 
+    width: 95%;
+    height: 2px;
+    border: none;
+    background-color: var(--light);
+    margin: 20px 0;
 }
