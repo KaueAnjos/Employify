@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 /* colors */
 :root {
     --light: #fff;
@@ -20,6 +16,11 @@ body {
 }
 
 /* Main config */
+
+body {
+    overflow-x: hidden;
+}
+
 main {
     display: flex;
     flex-direction: column;
