@@ -328,6 +328,7 @@ main.shifted {
     border-radius: 25px;
     color: var(--light);
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .menu-content p:hover {
