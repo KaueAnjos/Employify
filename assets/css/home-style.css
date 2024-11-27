@@ -143,7 +143,7 @@ section.feed-display .courses-display {
 
 section.feed-display .courses-display .course-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 section.feed-display .courses-display .course-container .course-informations {
@@ -181,9 +181,10 @@ section.feed-display .courses-display .course-container .course-informations .au
     width: 350px;
 }
 
-/* .side-menu.open ~ .course-title-container{
+.side-menu.open ~ .feed-display .course-title-container {
     width: 250px;
-} */
+}
+
 
 p.course-title {
     position: relative;
