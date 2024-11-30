@@ -19,17 +19,127 @@
 main {
     display: flex;
     flex-direction: column;
+    background: var(--background);
+    justify-content: center;
+    align-items: center;
 }
 
 main section {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100dvh;
-    background: var(--background);
     color: var(--light);
+    margin-top: 100px;
 }
 
 main section .profile-container {
     display: flex;
-    margin-top: 100px;
+    padding: 50px 50px 100px 50px;
+    justify-content: space-around;
+}
+
+/* animated arrow */
+
+main a i{
+    position: absolute;
+    text-align: center;
+    bottom: 50px;
+    animation: move 1.1s infinite ease-in-out;
+    font-size: 34px;
+    padding: 5px;
+    border-radius: 50%;
+    color: var(--secondary-color);
+} 
+
+main a i:hover{
+    transition: 0.5s;
+    background-color: var(--primary-color-light);
+}
+
+@keyframes move{
+    0%{
+        bottom: 50px;
+    }
+    50%{
+        bottom: 20px;
+    }
+    100%{
+        bottom: 50px;
+    }
+}
+
+/* User data */
+
+.user-data{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.user-data div.user-photo-container{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-data div.user-photo-container img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-data .user-about{
+    margin-top: 60px;
+}
+
+.user-data h2{
+    font-size: 50px;
+    margin: 0;
+}
+
+.user-data h3{
+    font-size: 30px;
+    margin: 0;
+}
+
+.user-data p{
+    font-size: 20px;
+    text-align: justify;
+    margin: 0 !important;
+}
+
+
+/* Buttons */
+
+.profile-container div.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.profile-container div.buttons button{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    padding: 20px 0 20px 0;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--light);
+    background-color: var(--secondary-color);
+}
+
+.profile-container div.buttons button i{
+    font-size: 24px;
 }

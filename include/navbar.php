@@ -1,5 +1,5 @@
 <?php
-session_start();  // Iniciar a sessão para acessar as variáveis de sessão
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +28,16 @@ session_start();  // Iniciar a sessão para acessar as variáveis de sessão
 
         <li class="user-profile" id="user-profile">
             <?php if (isset($_SESSION['user_id'])) : ?>
+                <style>
+                    li.user-profile .dropdown .dropdown-menu li:nth-child(2) a.dropdown-item {
+                        justify-content: left;
+                    }
+
+                    li.user-profile .dropdown .dropdown-menu li:nth-child(3) a.dropdown-item {
+                        justify-content: space-between;
+                    }
+                </style>
+
                 <div class="user-info">
                     <span>Olá, <?php echo $_SESSION['username']; ?></span>
                 </div>
@@ -36,6 +46,13 @@ session_start();  // Iniciar a sessão para acessar as variáveis de sessão
                         <i class="fa-solid fa-user"></i>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+
+                        <li>
+                            <a class="dropdown-item" href="<?php echo INCLUDE_PATH?>profile">
+                                <i class="fa-solid fa-user"></i>
+                                <p>Acessar Perfil</p>
+                            </a>
+                        </li>
                         <li>
                             <a class="dropdown-item" href="#">
                                 <i class="fa-solid fa-globe"></i>
@@ -54,15 +71,15 @@ session_start();  // Iniciar a sessão para acessar as variáveis de sessão
                                 </label>
                             </a>
                         </li>
+
                         <li>
-                            <a class="dropdown-item" href="<?php echo INCLUDE_PATH_USERS ?>profile">
-                                <i class="fa fa-sign-in"></i>
-                                <p>Acessar Perfil</p>
+                            <a class="dropdown-item" href="<?php echo INCLUDE_PATH_AUTH ?>logout">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <p>Sair</p>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <a href="<?php echo INCLUDE_PATH_AUTH ?>logout"><button>Sair</button></a>
             <?php else : ?>
                 <div class="register-user">
                     <a href="<?php echo INCLUDE_PATH_AUTH ?>login"><button>Entrar</button></a>
@@ -74,8 +91,8 @@ session_start();  // Iniciar a sessão para acessar as variáveis de sessão
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                         <li>
-                            <a class="dropdown-item" href="<?php echo INCLUDE_PATH_AUTH ?>login"><i class="fa fa-sign-in" aria-hidden="true"></i>Entrar</a>
-                        </li>                        
+                            <a class="dropdown-item" href="<?php echo INCLUDE_PATH_AUTH ?>login"><i class="fa-solid fa-right-to-bracket"></i>Entrar</a>
+                        </li>
                         <li>
                             <a class="dropdown-item" href="#">
                                 <div>

@@ -15,7 +15,7 @@ require_once 'config/config.php';
 </head>
 
 <body>
-    <section class="dots-container"  id="loadingDots">
+    <section class="dots-container" id="loadingDots">
         <div class="dot"></div>
         <div class="dot"></div>
         <div class="dot"></div>
@@ -25,30 +25,38 @@ require_once 'config/config.php';
 
     <?php
     include 'include/navbar.php';
+    $route = isset($_GET['url']) ? $_GET['url'] : 'feed';
 
-    // Route 
-    $route = (isset($_GET['url'])) ? $_GET['url'] : 'feed';
-    $feedDir = 'feed/';
+    $directories = ['feed/', 'users/', 'playlists/'];
 
-    if (file_exists($feedDir . $route . '.php')) {
-        include $feedDir . $route . '.php';
-    } else {
+    $fileFound = false;
+
+    foreach ($directories as $dir) {
+        if (file_exists($dir . $route . '.php')) {
+            include $dir . $route . '.php';
+            $fileFound = true;
+            break;
+        }
+    }
+
+    if (!$fileFound) {
         include '404.php';
     }
 
     include 'include/footer.php';
     ?>
+
     <script src="<?php echo INCLUDE_PATH; ?>assets/js/script.js"></script>
     <script>
-        window.addEventListener("scroll", function () {
-    var navbar = document.getElementsByClassName("navbar");
+        window.addEventListener("scroll", function() {
+            var navbar = document.getElementsByClassName("navbar");
 
-    if (window.scrollY > 0) {
-        navbar.style.background = "#FF0000";
-    } else {
-        navbar.style.background = "transparent";
-    }
-});
+            if (window.scrollY > 0) {
+                navbar.style.background = "#FF0000";
+            } else {
+                navbar.style.background = "transparent";
+            }
+        });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

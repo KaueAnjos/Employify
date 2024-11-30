@@ -1,6 +1,22 @@
-RewriteEngine On
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteBase /
+#     RewriteCond %{REQUEST_FILENAME} !-f
+#     RewriteCond %{REQUEST_FILENAME} !-d
+#     RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+# </IfModule>
 
-# Redirecionar todas as requisições para index.php
-RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteEngine On
+RewriteBase /Employify/
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+ErrorDocument 403 http://localhost/Code-Employify/index.php
+Options -Indexes
+
+<Files .env>
+    Require all denied
+</Files>
+
