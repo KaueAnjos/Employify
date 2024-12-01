@@ -284,7 +284,7 @@ section.feed-display .courses-display .course-container .course-thumbnail img {
 
 /* Offcanvas */
 
-main {
+/* main {
     transition: margin-right 0.3s ease-in-out;
 }
 
@@ -367,4 +367,4 @@ hr {
     border: none;
     background-color: var(--light);
     margin: 20px 0;
-}
+} */

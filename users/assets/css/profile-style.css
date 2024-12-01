@@ -28,20 +28,20 @@ main section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100dvh;
+    height: calc(100dvh - 100px);
     color: var(--light);
     margin-top: 100px;
 }
 
 main section .profile-container {
     display: flex;
-    padding: 50px 50px 100px 50px;
+    padding: 50px 100px 100px 100px;
     justify-content: space-around;
 }
 
 /* animated arrow */
 
-main a i{
+main a i.fa-chevron-down{
     position: absolute;
     text-align: center;
     bottom: 50px;
@@ -52,7 +52,7 @@ main a i{
     color: var(--secondary-color);
 } 
 
-main a i:hover{
+main a i.fa-chevron-down:hover{
     transition: 0.5s;
     background-color: var(--primary-color-light);
 }
@@ -78,9 +78,26 @@ main a i:hover{
     justify-content: space-around;
 }
 
+.user-data div .user-stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-data div .user-stats div{
+    display: flex;
+    gap: 20px;
+}
+
+.user-data div .user-stats p{
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 10px;
+}
+
 .user-data div.user-photo-container{
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     background-color: red;
     border-radius: 50%;
     display: flex;
@@ -104,12 +121,12 @@ main a i:hover{
 }
 
 .user-data h3{
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
 }
 
 .user-data p{
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
     margin: 0 !important;
 }
@@ -122,6 +139,10 @@ main a i:hover{
     flex-direction: column;
     justify-content: flex-end;
     gap: 30px;
+}
+
+.profile-container div.buttons a{
+    text-decoration: none;
 }
 
 .profile-container div.buttons button{
@@ -138,6 +159,11 @@ main a i:hover{
     font-weight: 500;
     color: var(--light);
     background-color: var(--secondary-color);
+}
+
+.profile-container div.buttons button:hover{
+    background-color: var(--secondary-color-hover);
+    transition: 0.5s;
 }
 
 .profile-container div.buttons button i{

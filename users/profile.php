@@ -12,7 +12,13 @@
                 <div class="user-data">
                     <div>
                         <div class="user-photo-container"><img src="" alt="user-photo"></div>
-                        <h2>Nome Completo</h2>
+                        <div class="user-stats">
+                            <h2>Nome Completo</h2>
+                            <div>
+                                <p><b>19</b> Seguindo</p>
+                                <p><b>5</b> Seguidores</p>
+                            </div>
+                        </div>
                         <h3>Nome Usuário</h3>
                     </div>
 
@@ -23,10 +29,10 @@
                 </div>
 
                 <div class="buttons">
-                    <button><i class="fa-solid fa-brain"></i>Employify IA</button>
-                    <button><i class="fa-solid fa-pencil"></i>Editar Perfil</button>
-                    <button><i class="fa-solid fa-book"></i>Seus Cursos</button>
-                    <button><i class="fa-solid fa-clock"></i>Histórico</button>
+                    <a href="<?php echo INCLUDE_PATH?>chat"><button><i class="fa-solid fa-brain"></i>Employify IA</button></a>
+                    <a href="<?php echo INCLUDE_PATH?>"><button><i class="fa-solid fa-pencil"></i>Editar Perfil</button></a>
+                    <a href="<?php echo INCLUDE_PATH?>courses"><button><i class="fa-solid fa-book"></i>Seus Cursos</button></a>
+                    <a href="<?php echo INCLUDE_PATH?>history"><button><i class="fa-solid fa-clock"></i>Histórico</button></a>
                 </div>
             </div>
         </section>

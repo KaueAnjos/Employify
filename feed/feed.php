@@ -5,7 +5,7 @@
 
 <main>
 
-    <div class="side-menu" id="side-menu">
+    <!-- <div class="side-menu" id="side-menu">
         <button class="side-menu-btn" id="side-menu-btn" type="button" onclick="sideMenu()">
             <i class="fa-solid fa-chevron-left"></i>
         </button>
@@ -30,7 +30,7 @@
             justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
             <strong>© 2024 Employify</strong>
         </div>
-    </div>
+    </div> -->
 
     <section class="main-menu">
         <div class="main-container">

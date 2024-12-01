@@ -1,0 +1,84 @@
+main {
+    transition: margin-right 0.3s ease-in-out;
+}
+
+main.shifted {
+    margin-right: 250px;
+}
+
+.side-menu {
+    position: fixed;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    background: var(--background);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: right 0.3s ease-in-out;
+    z-index: 9999;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.side-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--light);
+}
+
+.menu-content p {
+    padding: 15px 15px;
+    cursor: pointer;
+    width: 90%;
+    margin: 5px 0;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    color: var(--light);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.menu-content p:hover {
+    background-color: var(--secondary-color-hover);
+    transition: 0.5s;
+}
+
+.side-menu-btn {
+    position: fixed;
+    top: 50%;
+    border-radius: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    padding: 15px 20px 15px 10px;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    transition: right 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.side-menu-btn i {
+    font-size: 25px;
+    color: var(--light);
+}
+
+.side-menu.open {
+    right: 0;
+}
+
+hr {
+    width: 95%;
+    height: 2px;
+    border: none;
+    background-color: var(--light);
+    margin: 20px 0;
+}
