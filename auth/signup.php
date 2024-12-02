@@ -7,15 +7,22 @@ $successMessage = '';
 
 // Processar o formulário de registro
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $fullName = trim($_POST['full_name']);
     $username = trim($_POST['username']);
     $email = trim($_POST['email']);
+    $phone = trim($_POST['phone']);
     $password = trim($_POST['password']);
     $confirmPassword = trim($_POST['confirm_password']);
 
-    if (empty($username) || empty($email) || empty($password) || empty($confirmPassword)) {
+    // Validações
+    if (empty($fullName) || empty($username) || empty($email) || empty($phone) || empty($password) || empty($confirmPassword)) {
         $errorMessage = "Por favor, preencha todos os campos.";
+    } elseif (!preg_match('/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/', $password)) {
+        $errorMessage = "A senha deve ter pelo menos 8 caracteres, incluindo letras e números.";
     } elseif ($password !== $confirmPassword) {
         $errorMessage = "As senhas não coincidem.";
+        // Apaga apenas os campos de senha
+        $password = $confirmPassword = '';
     } else {
         try {
             // Verificar se o e-mail já está registrado
@@ -28,9 +35,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             } else {
                 // Inserir novo usuário
                 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-                $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (:username, :email, :password)");
+                $stmt = $conn->prepare("INSERT INTO users (full_name, username, email, phone, password) 
+                                        VALUES (:full_name, :username, :email, :phone, :password)");
+                $stmt->bindParam(':full_name', $fullName);
                 $stmt->bindParam(':username', $username);
                 $stmt->bindParam(':email', $email);
+                $stmt->bindParam(':phone', $phone);
                 $stmt->bindParam(':password', $hashedPassword);
                 $stmt->execute();
 
@@ -44,7 +54,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -83,15 +92,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="input-group">
                     <div class="input-field">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" name="username" placeholder="Nome de usuário" required>
+                        <input type="text" name="full_name" placeholder="Nome completo"
+                            value="<?php echo htmlspecialchars($fullName ?? '', ENT_QUOTES); ?>" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="username" placeholder="Nome de usuário"
+                            value="<?php echo htmlspecialchars($username ?? '', ENT_QUOTES); ?>" required>
                     </div>
                     <div class="input-field">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="email" name="email" placeholder="Email"
+                            value="<?php echo htmlspecialchars($email ?? '', ENT_QUOTES); ?>" required>
                     </div>
                     <div class="input-field">
                         <i class="fa-solid fa-phone"></i>
-                        <input type="tel" name="phone" placeholder="Telefone" required>
+                        <input type="tel" name="phone" placeholder="Telefone"
+                            value="<?php echo htmlspecialchars($phone ?? '', ENT_QUOTES); ?>" required>
                     </div>
                     <div class="input-field">
                         <i class="fa-solid fa-lock"></i>
@@ -105,6 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <button class="submit-button" type="submit">Registrar</button>
                 </div>
             </form>
+
             <p>Já possui uma conta? <a href="<?php echo INCLUDE_PATH_AUTH; ?>login">Entrar</a></p>
 
             <div class="divider">

@@ -4,6 +4,7 @@
 </head>
 
 <main>
+    <?php include 'include/offcanvas.php'; ?>
     <section class="main-menu">
         <img src="<?php echo INCLUDE_PATH; ?>assets/img/Thumbnail.jfif">
     </section>

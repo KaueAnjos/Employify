@@ -1,5 +1,10 @@
 <?php
 require_once 'config/config.php';
+
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -26,7 +31,6 @@ require_once 'config/config.php';
 
     <?php
     include 'include/navbar.php';
-    include 'include/offcanvas.php';
 
     $route = isset($_GET['url']) ? $_GET['url'] : 'feed';
 

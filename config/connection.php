@@ -10,10 +10,13 @@ try {
     $conn->exec("
         CREATE TABLE IF NOT EXISTS users (
             id INT AUTO_INCREMENT PRIMARY KEY,
+            full_name VARCHAR(255) NOT NULL,
             username VARCHAR(100) NOT NULL,
             email VARCHAR(100) NOT NULL UNIQUE,
             phone VARCHAR(15) NOT NULL,
             password VARCHAR(255) NOT NULL,
+            photo VARCHAR(255) DEFAULT NULL,
+            about_me TEXT,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
     ");
