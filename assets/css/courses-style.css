@@ -14,3 +14,171 @@
     --secondary-color-hover: #168899;
     --background: radial-gradient(circle, rgba(9, 31, 47, 1) 0%, rgba(9, 31, 47, 1) 66%, rgba(17, 58, 83, 1) 100%);
 }
+
+section.feed-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background);
+    width: 100%;
+    height: auto;
+    color: var(--light);
+}
+
+section.feed-display .feed-title {
+    margin-top: 150px;
+}
+
+section.feed-display .courses-display {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 150px;
+    margin-top: 100px;
+}
+
+section.feed-display .courses-display .course-container {
+    display: flex;
+    flex-direction: column; 
+}
+
+section.feed-display .courses-display .course-container .course-informations {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    padding: 0 0 0 20px;
+}
+
+section.feed-display .courses-display .course-container .course-informations .author-and-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.course-container .course-informations i {
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+.course-container .course-informations i:hover {
+    cursor: pointer;
+    background-color: var(--primary-color-light-hover);
+}
+
+.course-title-container{
+    width: 350px;
+}
+
+.side-menu.open ~ .feed-display .course-title-container {
+    width: 250px;
+}
+
+
+p.course-title {
+    position: relative;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.course-container .course-informations .author-account-container {
+    background-color: aqua;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+section.feed-display .courses-display .course-container .course-thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    width: 500px;
+    height: 300px;
+    transition: width 0.3s ease, height 0.3s ease;
+    overflow: hidden;
+    background-color: var(--light);
+}
+
+section.feed-display .courses-display .course-container .course-thumbnail img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    text-align: center;
+    cursor: pointer;
+}
+
+.side-menu.open ~ section.feed-display .courses-display .course-container .course-thumbnail {
+    width: 400px;
+    height: 250px;
+}
+
+/* Dropdown */
+
+.dropdown button i {
+    transition: 0.5s;
+    color: var(--secondary-color);
+}
+
+.dropdown .dropdown-menu i {
+    color: var(--secondary-color);
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    transition: 0.5s;
+}
+
+.dropdown button {
+    border: none;
+    padding: 0 !important;
+}
+
+.dropdown .dropdown-menu {
+    background-color: var(--primary-color-light);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 5px;
+    border-radius: 10px;
+    min-width: 250px;
+}
+
+.dropdown .dropdown-menu li a.dropdown-item {
+    display: flex;
+    align-items: center;
+    color: var(--light);
+    border-radius: 8px;
+    justify-content: left;
+}
+
+.dropdown .dropdown-menu li:hover a,
+.dropdown .dropdown-menu li a:active,
+.dropdown .dropdown-menu li a:focus {
+    background-color: var(--primary-color-light-hover);
+}
+
+.dropdown .dropdown-menu li a.dropdown-item div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.dropdown .dropdown-menu li a.dropdown-item p {
+    margin: 0;
+}

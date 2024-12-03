@@ -9,8 +9,8 @@
         <h3>Você</h3>
         <p>Inscrições</p>
         <p>Curtidas</p>
-        <p>Cursos</p>
-        <p>Histórico</p>
+        <p><a href="<?php echo INCLUDE_PATH; ?>courses">Cursos</a></p>
+        <p><a href="<?php echo INCLUDE_PATH; ?>history">Histórico</a></p>
         <hr>
         <p>Configurações</p>
         <p>Ajuda</p>

@@ -34,6 +34,11 @@ main.shifted {
     color: var(--light);
 }
 
+.menu-content a{
+    text-decoration: none;
+    color: var(--light);
+}
+
 .menu-content p {
     padding: 15px 15px;
     cursor: pointer;

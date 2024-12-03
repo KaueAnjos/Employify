@@ -4,7 +4,7 @@
 </head>
 
 <main>
-    <?php include 'include/offcanvas.php';?>
+    <?php include 'include/offcanvas.php'; ?>
 
     <section class="main-menu">
         <div class="main-container">
@@ -41,10 +41,10 @@
                 <div class="course-informations">
                     <div class="author-and-title">
                         <div class="author-account-container">
-                            <img src="<?php echo INCLUDE_PATH; ?>assets/img/">
+
                         </div>
                         <div class="course-title-container">
-                            <p class="course-title">Como criar Cards e esquecer de vez o Panel e o Thumbnail - Criando um site com Bootstrap 4 - Aula 06</p>
+                            <p class="course-title">Título do Curso</p>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 <div class="course-thumbnail">
-                    <img src="<?php echo INCLUDE_PATH; ?>assets/img/Thumbnail.jfif">
+                    <a href="<?php echo INCLUDE_PATH ?>selectedcourse"><img src="" alt="THUMBNAIL"></a>
                 </div>
             </div>
 
@@ -88,10 +88,10 @@
                 <div class="course-informations">
                     <div class="author-and-title">
                         <div class="author-account-container">
-                            <img src="<?php echo INCLUDE_PATH; ?>assets/img/">
+
                         </div>
                         <div class="course-title-container">
-                            <p class="course-title">Como criar Cards e esquecer de vez o Panel e o Thumbnail - Criando um site com Bootstrap 4 - Aula 06</p>
+                            <p class="course-title">Título do Curso</p>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 <div class="course-thumbnail">
-                    <img src="<?php echo INCLUDE_PATH; ?>assets/img/Thumbnail.jfif">
+                    <a><img src="" alt="THUMBNAIL"></a>
                 </div>
             </div>
 
@@ -135,10 +135,10 @@
                 <div class="course-informations">
                     <div class="author-and-title">
                         <div class="author-account-container">
-                            <img src="<?php echo INCLUDE_PATH; ?>assets/img/">
+
                         </div>
                         <div class="course-title-container">
-                            <p class="course-title">Como criar Cards e esquecer de vez o Panel e o Thumbnail - Criando um site com Bootstrap 4 - Aula 06</p>
+                            <p class="course-title">Título do Curso</p>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -174,7 +174,9 @@
                     </div>
                 </div>
                 <div class="course-thumbnail">
-                    <img src="<?php echo INCLUDE_PATH; ?>assets/img/Thumbnail.jfif">
+                    <a href="<?php echo INCLUDE_PATH; ?>selectedcourse">
+                        <a><img src="" alt="THUMBNAIL"></a>
+                    </a>
                 </div>
             </div>
 
@@ -182,10 +184,10 @@
                 <div class="course-informations">
                     <div class="author-and-title">
                         <div class="author-account-container">
-                            <img src="<?php echo INCLUDE_PATH; ?>assets/img/">
+
                         </div>
                         <div class="course-title-container">
-                            <p class="course-title">Como criar Cards e esquecer de vez o Panel e o Thumbnail - Criando um site com Bootstrap 4 - Aula 06</p>
+                            <p class="course-title">Título do Curso</p>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -221,7 +223,7 @@
                     </div>
                 </div>
                 <div class="course-thumbnail">
-                    <img src="<?php echo INCLUDE_PATH; ?>assets/img/Thumbnail.jfif">
+                    <a><img src="" alt="THUMBNAIL"></a>
                 </div>
             </div>
 
@@ -229,10 +231,10 @@
                 <div class="course-informations">
                     <div class="author-and-title">
                         <div class="author-account-container">
-                            <img src="<?php echo INCLUDE_PATH; ?>assets/img/">
+
                         </div>
                         <div class="course-title-container">
-                            <p class="course-title">Como criar Cards e esquecer de vez o Panel e o Thumbnail - Criando um site com Bootstrap 4 - Aula 06</p>
+                            <p class="course-title">Título do Curso</p>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -268,7 +270,7 @@
                     </div>
                 </div>
                 <div class="course-thumbnail">
-                    <img src="<?php echo INCLUDE_PATH; ?>assets/img/Thumbnail.jfif">
+                    <a><img src="" alt="THUMBNAIL"></a>
                 </div>
             </div>
 
@@ -276,10 +278,10 @@
                 <div class="course-informations">
                     <div class="author-and-title">
                         <div class="author-account-container">
-                            <img src="<?php echo INCLUDE_PATH; ?>assets/img/">
+
                         </div>
                         <div class="course-title-container">
-                            <p class="course-title">Como criar Cards e esquecer de vez o Panel e o Thumbnail - Criando um site com Bootstrap 4 - Aula 06</p>
+                            <p class="course-title">Título do Curso</p>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -315,7 +317,7 @@
                     </div>
                 </div>
                 <div class="course-thumbnail">
-                    <img src="<?php echo INCLUDE_PATH; ?>assets/img/Thumbnail.jfif">
+                    <a><img src="" alt="THUMBNAIL"></a>
                 </div>
             </div>
 

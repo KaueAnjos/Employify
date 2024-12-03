@@ -112,7 +112,7 @@ div.intro-photo-container {
     width: 500px;
     height: 500px;
     border-radius: 30px;
-    background-color: burlywood;
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,11 +212,18 @@ section.feed-display .courses-display .course-container .course-thumbnail {
     height: 300px;
     transition: width 0.3s ease, height 0.3s ease;
     overflow: hidden;
+    background-color: var(--light);
 }
 
 section.feed-display .courses-display .course-container .course-thumbnail img {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    text-align: center;
+    cursor: pointer;
 }
 
 .side-menu.open ~ section.feed-display .courses-display .course-container .course-thumbnail {
